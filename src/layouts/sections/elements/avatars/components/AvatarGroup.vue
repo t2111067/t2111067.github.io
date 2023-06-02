@@ -28,7 +28,7 @@ onMounted(() => {
       <div class="col-12">
         <div class="avatar-group">
           <a
-            href="javascript:;"
+            href="javascript:"
             class="avatar avatar-lg"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
@@ -37,7 +37,7 @@ onMounted(() => {
             <MaterialAvatar :image="team1" alt="Image placeholder" size="lg" />
           </a>
           <a
-            href="javascript:;"
+            href="javascript:"
             class="avatar avatar-lg"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
@@ -46,7 +46,7 @@ onMounted(() => {
             <MaterialAvatar :image="team2" alt="Image placeholder" size="lg" />
           </a>
           <a
-            href="javascript:;"
+            href="javascript:"
             class="avatar avatar-lg"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
@@ -55,7 +55,7 @@ onMounted(() => {
             <MaterialAvatar :image="team3" alt="Image placeholder" size="lg" />
           </a>
           <a
-            href="javascript:;"
+            href="javascript:"
             class="avatar avatar-lg"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"

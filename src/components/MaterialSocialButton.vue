@@ -23,7 +23,7 @@ defineProps({
     <i
       class="fab"
       :class="`fa-${component} ${
-        $attrs.class == 'btn-icon-only' ? 'me-0' : 'me-1'
+        $attrs.class === 'btn-icon-only' ? 'me-0' : 'me-1'
       }`"
     ></i>
     {{ label }}
