@@ -39,7 +39,7 @@ defineProps({
           {{ description }}
         </p>
         <a
-          href="javascript:;"
+          href="javascript:"
           class="text-sm icon-move-right"
           :class="`text-${action.color}`"
           >{{ action.label }}
