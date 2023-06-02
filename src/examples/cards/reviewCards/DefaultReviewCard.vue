@@ -29,7 +29,7 @@ const props = defineProps({
 // gets rating
 const ratings = (rating) => {
   let ratingValue;
-  if (rating == 1) {
+  if (rating === 1) {
     ratingValue = `
     ${
       props.color
@@ -50,7 +50,7 @@ const ratings = (rating) => {
     `
     }
 `;
-  } else if (rating == 2) {
+  } else if (rating === 2) {
     ratingValue = `
     ${
       props.color
@@ -70,7 +70,7 @@ const ratings = (rating) => {
         `
     }
 `;
-  } else if (rating == 3) {
+  } else if (rating === 3) {
     ratingValue = `
     ${
       props.color
@@ -90,7 +90,7 @@ const ratings = (rating) => {
         `
     }
 `;
-  } else if (rating == 4) {
+  } else if (rating === 4) {
     ratingValue = `
     ${
       props.color
@@ -111,7 +111,7 @@ const ratings = (rating) => {
         `
     }
 `;
-  } else if (rating == 5) {
+  } else if (rating === 5) {
     ratingValue = `
     ${
       props.color

@@ -49,7 +49,7 @@ export default {
         }`"
         >{{ typeof icon == "object" ? icon.component : icon }}</i
       >
-      <img v-if="image" :src="image.component" :class="image.class" />
+      <img v-if="image" :src="image.component" :class="image.class" alt="" />
       <h5
         :class="
           typeof title == 'string' ? 'font-weight-bolder mt-3' : title.class

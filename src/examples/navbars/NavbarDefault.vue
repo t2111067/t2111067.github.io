@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink } from "vue-router";
 import { ref, watch } from "vue";
-import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
+import { useWindowsWidth } from "@/assets/js/useWindowsWidth";
 
 // images
 import ArrDark from "@/assets/img/down-arrow-dark.svg";
@@ -17,29 +17,29 @@ const props = defineProps({
     default: () => ({
       route: "https://www.creative-tim.com/product/vue-material-kit",
       color: "bg-gradient-success",
-      label: "Free Download"
-    })
+      label: "Free Download",
+    }),
   },
   transparent: {
     type: Boolean,
-    default: false
+    default: false,
   },
   light: {
     type: Boolean,
-    default: false
+    default: false,
   },
   dark: {
     type: Boolean,
-    default: false
+    default: false,
   },
   sticky: {
     type: Boolean,
-    default: false
+    default: false,
   },
   darkText: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 });
 
 // set arrow  color
@@ -74,7 +74,7 @@ const { type } = useWindowsWidth();
 
 if (type.value === "mobile") {
   textDark.value = true;
-} else if (type.value === "desktop" && textDark.value == false) {
+} else if (type.value === "desktop" && textDark.value === false) {
   textDark.value = false;
 }
 
@@ -98,7 +98,7 @@ watch(
       'my-3 blur border-radius-lg z-index-3 py-2 shadow py-2 start-0 end-0 mx-4 position-absolute mt-4':
         props.sticky,
       'navbar-light bg-white py-3': props.light,
-      ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark
+      ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark,
     }"
   >
     <div
@@ -113,7 +113,7 @@ watch(
         :class="[
           (props.transparent && textDark.value) || !props.transparent
             ? 'text-dark font-weight-bolder ms-sm-3'
-            : 'text-white font-weight-bolder ms-sm-3'
+            : 'text-white font-weight-bolder ms-sm-3',
         ]"
         :to="{ name: 'presentation' }"
         rel="tooltip"
@@ -308,7 +308,7 @@ watch(
                   >
                     <a
                       class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
+                      href="javascript:"
                     >
                       <div class="d-flex">
                         <div
@@ -350,7 +350,7 @@ watch(
                   >
                     <a
                       class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
+                      href="javascript:"
                     >
                       <div class="d-flex">
                         <div
@@ -398,7 +398,7 @@ watch(
                   >
                     <a
                       class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
+                      href="javascript:"
                     >
                       <div class="d-flex">
                         <div
@@ -440,7 +440,7 @@ watch(
                   >
                     <a
                       class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
+                      href="javascript:"
                     >
                       <div class="d-flex">
                         <div
@@ -488,7 +488,7 @@ watch(
                   >
                     <a
                       class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
+                      href="javascript:"
                     >
                       <div class="d-flex">
                         <div
@@ -909,8 +909,9 @@ watch(
             </div>
           </li>
           <li class="nav-item dropdown dropdown-hover mx-2">
+            <!-- 2023.06.02 주소변경 -->
             <a
-              href="https://www.github.com/creativetimofficial/vue-material-kit"
+              href="https://github.com/t2111067/t2111067.github.io"
               class="nav-link d-flex cursor-pointer align-items-center"
             >
               <svg
@@ -930,6 +931,8 @@ watch(
             </a>
           </li>
         </ul>
+        <!-- 2023.06.02 사용안함 삭제 처리 -->
+        <!--
         <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
             <a
@@ -941,6 +944,7 @@ watch(
             >
           </li>
         </ul>
+        -->
       </div>
     </div>
   </nav>
