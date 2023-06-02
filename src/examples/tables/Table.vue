@@ -31,14 +31,14 @@ defineProps({
         <div class="col-lg-10">
           <div class="card">
             <div class="table-responsive">
-              <table class="table align-items-center mb-0">
+              <table class="table align-items-center mb-0" rows="">
                 <thead>
                   <tr>
                     <th
                       v-for="(header, index) in headers"
                       :key="header"
                       class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
-                      :class="{ 'ps-2': index == 1, 'text-center': index > 1 }"
+                      :class="{ 'ps-2': index === 1, 'text-center': index > 1 }"
                     >
                       {{ header }}
                     </th>

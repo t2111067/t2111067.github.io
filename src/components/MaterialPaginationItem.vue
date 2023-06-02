@@ -32,7 +32,7 @@ function getClasses(active, disabled) {
 </script>
 <template>
   <li class="page-item" :class="getClasses(active, disabled)">
-    <a class="page-link" href="javascript:;">
+    <a class="page-link" href="javascript:">
       <span aria-hidden="true" :class="active ? 'text-white' : ''">
         {{ prev || next ? null : label }}
         <i v-if="prev" class="fa fa-angle-double-left"></i>
